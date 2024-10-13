@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(148, 195, 253);
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-style: initial;
+}
+svg{
+   
+    height: 50vh;
+ 
+}
+path{
+    height: 50vh;
+    fill:rgb(91, 187, 155);
+    stroke: rgb(13, 16, 9);
+    stroke-width: 2px;
+}
+path:hover{
+    fill: rgb(5, 53, 55);
+    stroke: whitesmoke;
+    stroke-width: 1.3;
+    animation: resaltar 10s infinite;
+}
+
+@keyframes resaltar {
+   
+    0% {
+        transform: rotate( 0deg ) scale( 1 );
+      }
+      10% {
+        transform: rotate( 15deg ) scale( 1 );
+      }
+      50% {
+        transform: rotate( -180deg ) scale( 1.4 );
+      }
+      100% {
+        transform: rotate( -360deg ) scale( 1 );
+      }
+}
